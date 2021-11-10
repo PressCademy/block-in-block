@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "bib/featured-item-block",
+  "title": "Featured Item Block",
+  "category": "design",
+  "icon": "slides",
+  "description": "Featured item, including a simple heading, an image, some content, and a Call to Action",
+  "keywords": [ "custom", "bib", "cta" ],
+  "version": "1.0.0",
+  "textdomain": "bib",
+  "editorScript": "file:./build/index.js"
+}
