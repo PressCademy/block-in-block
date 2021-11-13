@@ -9,4 +9,12 @@ set of existing blocks, including a **heading block**, an **image block**, a **p
 **button block**. These blocks cannot be moved, but you can completely configure the contents of each block.
 
 This is a common scenario for websites that have certain patterns that they want to re-use throughout their site, and
-a [block pattern]() doesn't adequately lock the content down well-enough.
+a [block pattern](https://wordpress.org/support/article/block-pattern/) doesn't adequately lock the content down
+well-enough.
+
+## Installation
+
+1. Set up Underpin. This can be done as a mu-plugin, or added directly to this site. See [Underpin's docs for more info](https://github.com/underpin-WP/underpin#installation)
+2. clone this plugin in your WordPress `plugins` directory
+`git clone git@github.com:wp-Dev-Academy/block-in-block.git`
+3. Activate the plugin
