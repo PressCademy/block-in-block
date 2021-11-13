@@ -1,13 +1,12 @@
-# Boilerplate for Custom Projects
+# Build a Block Using Other Blocks
 
-This is a plugin boilerplate built on the [Underpin](https://github.com/alexstandiford/underpin) Framework. For
-information on how to use this, check out Underpin's docs.
+This plugin shows you how to build a very basic custom Gutenberg block using other blocks, and
+the [Underpin](github.com/underpin-WP/underpin) Framework. A complete walkthrough on how this plugin was built,
+including step-by-step instructions is available on [WP Dev Academy](https://www.wpdev.academy).
 
-This plugin expects that Underpin has been installed as a [WordPress Must-Use plugin](https://wordpress.org/support/article/must-use-plugins/).
+This plugin adds a single block, called a "featured item" to the list of available blocks. This block is made out of a
+set of existing blocks, including a **heading block**, an **image block**, a **paragraph block**, and a
+**button block**. These blocks cannot be moved, but you can completely configure the contents of each block.
 
-## Webpack Config
-
-The Webpack and NPM configuration in this plugin is a barebones WordPress configuration that aligns the script dir with
-Underpin's default script directory. It is intentionally un-opinionated, but it is set-up and ready to be extended.
-
-The default entrypoint is `src/index.js`.
+This is a common scenario for websites that have certain patterns that they want to re-use throughout their site, and
+a [block pattern]() doesn't adequately lock the content down well-enough.
