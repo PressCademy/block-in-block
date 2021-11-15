@@ -1,22 +1,33 @@
-import { registerBlockType } from '@wordpress/blocks';
-import metadata from '../block.json';
-import { useBlockProps } from '@wordpress/block-editor'
-import { InnerBlocks } from '@wordpress/block-editor';
+import { registerBlockType } from '@wordpress/blocks'
+import metadata from '../block.json'
+import { InnerBlocks, useBlockProps } from '@wordpress/block-editor'
 
 registerBlockType( metadata, {
 
 	edit: () => {
 		const blockProps = useBlockProps()
-
-		return <InnerBlocks
-			{...useBlockProps}
-			templateLock="all"
-			template={[
-				['core/heading', { placeholder: 'Featured Item Heading' }],
-				['core/image'],
-				['core/paragraph', { placeholder: 'Featured Item Content' }],
-				['core/button', { placeholder: 'Featured Item CTA' }]
-			]}/>
+		return (
+			<div {...blockProps}>
+				<InnerBlocks
+					templateLock="all"
+					template={[
+						['core/heading', { level: "3", placeholder: 'Featured Item Heading' }],
+						['core/image'],
+						['core/paragraph', { placeholder: 'Featured Item Content' }],
+						['core/button', { placeholder: 'Featured Item CTA' }]
+					]}
+				/>
+			</div>
+		)
 	},
-	save: ( props ) => <InnerBlocks.Content/>
-} );
+
+	save: () => {
+		const blockProps = useBlockProps.save()
+
+		return (
+			<div {...blockProps}>
+				<InnerBlocks.Content/>
+			</div>
+		)
+	}
+} )
