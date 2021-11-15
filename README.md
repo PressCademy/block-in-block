@@ -2,7 +2,7 @@
 
 This plugin shows you how to build a very basic custom Gutenberg block using other blocks, and
 the [Underpin](github.com/underpin-WP/underpin) Framework. A complete walkthrough on how this plugin was built,
-including step-by-step instructions is available on [WP Dev Academy](https://www.wpdev.academy).
+including step-by-step instructions is available on [WP Dev Academy](https://www.wpdev.academy/course/build-a-block-from-other-blocks/).
 
 This plugin adds a single block, called a "featured item" to the list of available blocks. This block is made out of a
 set of existing blocks, including a **heading block**, an **image block**, a **paragraph block**, and a
