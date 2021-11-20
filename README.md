@@ -15,6 +15,7 @@ well-enough.
 ## Installation
 
 1. Set up Underpin. This can be done as a mu-plugin, or added directly to this site. See [Underpin's docs for more info](https://github.com/underpin-WP/underpin#installation)
-2. clone this plugin in your WordPress `plugins` directory
+2. Install Underpin's block loader
+3. clone this plugin in your WordPress `plugins` directory
 `git clone git@github.com:wp-Dev-Academy/block-in-block.git`
 3. Activate the plugin
