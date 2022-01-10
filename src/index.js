@@ -11,7 +11,7 @@ registerBlockType( metadata, {
 				<InnerBlocks
 					templateLock="all"
 					template={[
-						['core/heading', { level: "3", placeholder: 'Featured Item Heading' }],
+						['core/heading', { level: 3, placeholder: 'Featured Item Heading' }],
 						['core/image'],
 						['core/paragraph', { placeholder: 'Featured Item Content' }],
 						['core/button', { placeholder: 'Featured Item CTA' }]
